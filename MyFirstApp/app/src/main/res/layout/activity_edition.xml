@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/back_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edition">
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/st_titre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Edit"
+        android:textColor="#00BCD4"
+        />
+
+    <EditText
+        android:id="@+id/ed_rech_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="recherche"
+        android:inputType="textPersonName"
+        android:textColorHint="#A5A5A5"
+        android:textSize="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/ed_rech_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/ic_recherche" />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rv_edit"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
